@@ -12,53 +12,105 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
     </head>
-
     <body>
-        <h1>Hello, world !!:D!</h1>
-        <div class="container">
-          <!-- Single button -->
-<div class="btn-group">
-  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Action <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-  </ul>
-</div>
-<nav class="navbar navbar-default">
- <div class="container-fluid">
-   <!-- Brand and toggle get grouped for better mobile display -->
-   <div class="navbar-header">
-     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-       <span class="sr-only">Toggle navigation</span>
-       <span class="icon-bar"></span>
-       <span class="icon-bar"></span>
-       <span class="icon-bar"></span>
-     </button>
-     <a class="navbar-brand" href="#">Brand</a>
-   </div>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Jan</a>
+          </div>
 
-   <!-- Collect the nav links, forms, and other content for toggling -->
-   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-     <ul class="nav navbar-nav navbar-right">
-       <li><a href="#">Link</a></li>
-       <li class="dropdown">
-         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-         <ul class="dropdown-menu" role="menu">
-           <li><a href="#">Action</a></li>
-           <li><a href="#">Another action</a></li>
-           <li><a href="#">Something else here</a></li>
-           <li class="divider"></li>
-           <li><a href="#">Separated link</a></li>
-         </ul>
-       </li>
-     </ul>
-   </div><!-- /.navbar-collapse -->
- </div><!-- /.container-fluid -->
-</nav>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+              <li><a href="#">Link</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-form navbar-left">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Link</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+      <div class ="container">
+        <div class="row">
+          <div id ="slika" class ="col-xs-12 col-md-3">
+            Semle pride slika
+          </div>
+          <div id="osn_pod" class="col-xs12 col-md-offset-1 col-md-8">
+            <div class="row">
+              <h1> Osnovni podatki</h1>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <ul class="list-group">
+                  <li class="list-group-item">Ime: Jan</li>
+                  <li class="list-group-item">Priimek: Mravlja</li>
+                  <li class="list-group-item">Email: jan@mravlja.si</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="list-group">
+                  <li class="list-group-item">Ime: Jan</li>
+                  <li class="list-group-item">Priimek: Mravlja</li>
+                  <li class="list-group-item">Email: jan@mravlja.si</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div id="prog_zna" class="col-xs-12 col-md-4">
+            <h1>Programerska znanja</h1>
+              <h2>Html <span class="label label-warning">Html</span></h2>
+              <h3>CSS <span class="label label-info">CSS</span></h3>
+              <h4>Git <span class="label label-success">Git</span></h4>
+              <h5>Bootstrap <span class="label label-danger">Bootstrap</span></h5>
+          </div>
+          <div id="meh_vesc" class="col-xs-12 col-md-4">
+            <h1>Mehke veščine</h1>
+          </div>
+        <div id="pos_dos" class="col-xs-12 col-md-4">
+          <h1>Posebni dosežki</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div id="izku" class="col-xs-12 col-md-4">
+          <h1>Izobrazba</h1>
+        </div>
     </body>
 </html>
